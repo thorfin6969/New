@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(ram.jpg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            filter: blur(50%);
+        }
+
+        .login-container {
+            background-color: #bcdb34;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        .login-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background-color: #1ffffb;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-container button.cancel {
+            background-color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Student Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="studentName" placeholder="Student Name" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <input type="text" name="rollNo" placeholder="Roll No" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Enter</button>
+            
+            <button type="button" class="cancel">Cancel</button>
+        </form>
+    </div>
+
+</body>
+</html>
